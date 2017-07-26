@@ -8,7 +8,7 @@ import authRouter from './routes/AuthenticationRoute';
 require('dotenv').config();
 
 const dev = process.env.NODE_ENV !== 'production';
-const nextApp = next({
+const nextApp = next({ 
   dev,
   dir: path.resolve(__dirname)
 });
