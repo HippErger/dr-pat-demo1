@@ -19,4 +19,7 @@ adding genformmodel.js
 add the backend
 # FinalacaProject
 # FinalacaProject
+<<<<<<< HEAD
 # ClayandScottFinal
+=======
+>>>>>>> 7def450374d95854c0d355d6beab68c7d3ad069f
