@@ -60,7 +60,7 @@ class patientContact extends Component {
             type='text'
             name='userName'
             placeholder='Add username'
-            value={this.state.userName}
+            defaultValue={this.state.userName}
             onChange={this.handleInputChange.bind(this)}
           />
           &nbsp; &nbsp;
@@ -69,7 +69,7 @@ class patientContact extends Component {
             type='text'
             name='passWord'
             placeholder='Add password'
-            value={this.state.passWord}
+            defaultValue={this.state.passWord}
             onChange={this.handleInputChange.bind(this)}
           />
           <br />
@@ -78,7 +78,7 @@ class patientContact extends Component {
               type='text'
               name='firstName'
               placeholder='Add First name'
-              value={this.state.firstName}
+              defaultValue={this.state.firstName}
               onChange={this.handleInputChange.bind(this)}
             />
             &nbsp; &nbsp;
@@ -88,7 +88,7 @@ class patientContact extends Component {
               type='text'
               name='lastName'
               placeholder='Add Last name'
-              value={this.state.lastName}
+              defaultValue={this.state.lastName}
               onChange={this.handleInputChange.bind(this)}
              />
             <br />
@@ -97,7 +97,7 @@ class patientContact extends Component {
               type="String"
               name="birthdate"
               placeholder="mm/dd/yyyy"
-              value={this.state.birthdate}
+              defaultValue={this.state.birthdate}
               onChange={this.handleInputChange.bind(this)}
             />
             &nbsp; &nbsp;
@@ -107,7 +107,7 @@ class patientContact extends Component {
               type='text'
               name='address'
               placeholder='Add Address'
-              value={this.state.address}
+              defaultValue={this.state.address}
               onChange={this.handleInputChange.bind(this)}
             />
             <br />
@@ -117,7 +117,7 @@ class patientContact extends Component {
               type='text'
               name='city'
               placeholder='City'
-              value={this.state.city}
+              defaultValue={this.state.city}
               onChange={this.handleInputChange.bind(this)}
             />
             &nbsp; &nbsp;
@@ -127,7 +127,7 @@ class patientContact extends Component {
               type='text'
               name='homeState'
               placeholder='State'
-              value={this.state.homeState}
+              defaultValue={this.state.homeState}
               onChange={this.handleInputChange.bind(this)}
              />
              <br />
@@ -137,7 +137,7 @@ class patientContact extends Component {
              type='text'
              name='zip'
              placeholder='Zip'
-             value={this.state.zip}
+             defaultValue={this.state.zip}
              onChange={this.handleInputChange.bind(this)}
             />
                 <br /><br />
