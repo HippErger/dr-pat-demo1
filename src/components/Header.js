@@ -14,11 +14,11 @@ function Header() {
       <a>About</a>
     </Link>
     &nbsp; &nbsp;
-    <Link href="/signUpPage">
+    <Link href="/patientSignUpForm">
       <a>Sign-Up</a>
     </Link>
     &nbsp; &nbsp;
-    <Link href="/signInPage">
+    <Link href="/ListOfPatients">
     <a>Log In</a>
     </Link>
     &nbsp; &nbsp;
