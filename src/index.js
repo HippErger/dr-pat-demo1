@@ -8,7 +8,7 @@ import authRouter from './routes/AuthenticationRoute';
 require('dotenv').config();
 
 const dev = process.env.NODE_ENV !== 'production';
-const nextApp = next({ 
+const nextApp = next({
   dev,
   dir: path.resolve(__dirname)
 });
@@ -40,7 +40,7 @@ nextApp.prepare().then(() => {
 
 
   app.use(userRoutes);
-  app.use(authRouter);
+  // app.use(authRouter);
   // Handle everything that is not covered in above routes with next.js
   app.get('*', (request, response) => {
     return handle(request, response);
