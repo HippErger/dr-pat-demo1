@@ -4,7 +4,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import userRoutes from './routes/userRoutes';
-import authRouter from './routes/AuthenticationRoute';
+// import authRouter from './routes/AuthenticationRoute';
 require('dotenv').config();
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -25,7 +25,7 @@ nextApp.prepare().then(() => {
 
   // Define all you backend handlers here...
   mongoose.Promise = global.Promise;
-  mongoose.connect('mongodb://localhost/drpat', {
+  mongoose.connect('heroku_nv8wv6z2:v5eb88j1j0aukbsbbu3mb2dtes@ds129023.mlab.com:29023/heroku_nv8wv6z2', {
     useMongoClient: true,
   });
 
