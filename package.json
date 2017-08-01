@@ -26,10 +26,13 @@
     "passport-local": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.5.4",
+    "react-imageloader": "^2.1.0",
     "react-redux": "^5.0.5",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "universal-webpack": "^0.3.11",
+    "webpack-isomorphic-tools": "^3.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
