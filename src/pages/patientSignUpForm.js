@@ -11,6 +11,7 @@ import Link from 'next/link';
 
 
 
+
 const FORM_VALUES = {
   userName: '',
   passWord: '',
@@ -893,10 +894,13 @@ class patientContact extends Component {
 
           <br /><br />
           <input type="submit" value="Submit" />
-
-          <Link href="/signInPage">
-            <button >Already have an account</button>
+          <Link href={'/listOfPatients'}>
+            <button>
+              View Patients
+            </button>
           </Link>
+
+
 
         </form>
       </div>

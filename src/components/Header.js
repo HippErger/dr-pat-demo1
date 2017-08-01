@@ -18,13 +18,10 @@ function Header() {
       <a>Sign-Up</a>
     </Link>
     &nbsp; &nbsp;
-    <Link href="/ListOfPatients">
-    <a>Log In</a>
+    <Link href="/listOfPatients">
+    <a>Patient List</a>
     </Link>
-    &nbsp; &nbsp;
-    <Link href="/logOutPage">
-      <a>Log Out</a>
-    </Link>
+
     </div>
   );
 }
