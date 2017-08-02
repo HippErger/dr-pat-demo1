@@ -34,7 +34,7 @@ class ListOfPatients extends Component {
               </Link>
               <Link href={`patientSignUpForm?id=${user._id}`}>
                 <button>
-                  Fill out your form
+                  blank for a reason
                 </button>
               </Link>
               <button onClick=
