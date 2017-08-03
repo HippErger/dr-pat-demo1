@@ -5,10 +5,10 @@ import Header from '../components/Header';
 function IndexPage() {
   return (
     <div>
-      <h1>
-        Hello World
-      </h1>
       <Header />
+      <h1>
+        Dr. Patient
+      </h1>
     </div>
   );
   
