@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 
+
 function Header() {
   // add style inline-block
   return (
@@ -39,7 +40,7 @@ function Header() {
      <Link href="/listOfPatients">
      <a>List of Patients</a>
      </Link>
-     
+
      <hr/>
     </div>
   );

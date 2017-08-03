@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 
 
+
 function IndexPage() {
   const titleName = 'Dr. Patient';
   return (
