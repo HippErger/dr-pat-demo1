@@ -9,9 +9,6 @@ import {
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-
-
-
 const FORM_VALUES = {
   userName: '',
   passWord: '',
@@ -721,7 +718,7 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-          &bsp; &nbsp;
+          &nbsp; &nbsp;
           Seizures
           &nbsp; &nbsp;
           <input

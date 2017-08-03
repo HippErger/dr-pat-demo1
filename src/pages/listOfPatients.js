@@ -81,7 +81,7 @@ class ListOfPatients extends Component {
               </ul>
               <Link href={`/details?id=${user._id}`} >
                 <button>
-                View User
+                View Patient
                 </button>
               </Link>
               <Link href={`patientSignUpForm?id=${user._id}`}>
