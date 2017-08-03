@@ -1,16 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
+import Link from 'next/link';
 
 
 
 function IndexPage() {
+  const titleName = 'Dr. Patient';
   return (
     <div>
-      <h1>
-        Quick Patient Forms
-      </h1>
-      <Header />
-
       <style jsx>{`
         h1 {
           font-family: arial;
@@ -62,6 +59,24 @@ function IndexPage() {
           background-image: url('https://c1.staticflickr.com/7/6080/6104068209_d134b246f5_b.jpg')
         }
       `}</style>
+      <Header />
+      <div>
+        <h1>
+           Welcome to, {titleName}
+        </h1>
+        <div className='welcome-message'>
+          <p>
+            At {titleName} we are committed your privacy, security and ease
+            of access to quality healthcare. Start by selecting a doctor or creating a profile.
+          </p>
+          <Link href="/signUpPage">
+            <button>
+              <span>Create Profile</span>
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div className='picture-div'></div>
     </div>
   );
 
