@@ -1,5 +1,4 @@
 import User from '../models/patientContactModel';
-import userId from '../models/patientMedicalForm';
 
 const userController = {
 
@@ -12,7 +11,6 @@ const userController = {
       return next(err);
     });
   },
-  
 
   show: (request, response, next) => {
     User.findById(request.params.id).exec()
@@ -48,7 +46,7 @@ const userController = {
 
 
   update: (request, response, next) => {
-    userId.findByIdAndUpdate(request.params.id).exec()
+    User.findByIdAndUpdate(request.params.id).exec()
       .then(user => {
         user.firstName = request.body.firstName || user.firstName;
         user.lastName = request.body.lastName || user.lastName;

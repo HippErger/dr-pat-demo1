@@ -1,7 +1,8 @@
 import React from 'react';
-// import Link from 'next/link';
 import Header from '../components/Header';
 import Link from 'next/link';
+
+
 
 function IndexPage() {
   const titleName = 'Dr. Patient';

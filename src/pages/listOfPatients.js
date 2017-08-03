@@ -7,6 +7,7 @@ import {
 import withRedux from 'next-redux-wrapper';
 import {initStore} from '../services/store';
 import Link from 'next/link';
+import Header from '../components/Header';
 
 class ListOfPatients extends Component {
   componentDidMount() {
@@ -17,6 +18,7 @@ class ListOfPatients extends Component {
   render() {
     return (
       <div>
+      <Header />
         {this.props.users.map((user, key) => {
           return (
             <div key={key} >
@@ -30,9 +32,9 @@ class ListOfPatients extends Component {
                 View User
                 </button>
               </Link>
-              <Link href={`patientMedicalForm?id=${user._id}`}>
+              <Link href={`patientSignUpForm?id=${user._id}`}>
                 <button>
-                  Fill out your form
+                  blank for a reason
                 </button>
               </Link>
               <button onClick=
