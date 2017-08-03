@@ -10,7 +10,6 @@ function IndexPage() {
         Quick Patient Forms
       </h1>
       <Header />
-      
     </div>
   );
 
