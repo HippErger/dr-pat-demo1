@@ -43,6 +43,8 @@ function AboutPage() {
         Up-front information means less wait time in the office. Fill out the form
         and it will be sent directly to the doctor you choose. No paper. No wait.
       </p>
+      <br />
+      <hr />
     </div>
   );
 }

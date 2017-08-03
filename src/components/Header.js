@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 
-
-
 function Header() {
   // add style inline-block
   return (
@@ -17,7 +15,7 @@ function Header() {
          margin: 0 0 0 3%;
        }
        .first-a-tag {
-         margin: 0 0 0 27%;
+         margin: 0 0 0 33%;
        }
        hr {
          height: 12px;
@@ -40,7 +38,6 @@ function Header() {
      <Link href="/listOfPatients">
      <a>List of Patients</a>
      </Link>
-
      <hr/>
     </div>
   );
