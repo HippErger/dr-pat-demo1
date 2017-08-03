@@ -1,24 +1,48 @@
 import React from 'react';
-import Link from 'next/link';
 import Header from '../components/Header';
 
 function AboutPage() {
   return (
     <div>
+      <style jsx>{`
+        h2 {
+          font-family: arial;
+          font-weight: lighter;
+          text-align: center;
+          color: #f4511e;
+        }
+        hr {
+          border: 0;
+          height: 1px;
+          background: #333;
+          background-image: linear-gradient(to right, #ccc, #33FFFF, #ccc);
+        }
+        h6 {
+          text-align: center;
+          font-family: arial;
+          margin-bottom: 0;
+          font-weight: lighter;
+          font-size: 12px;
+        }
+        p {
+          font-family: arial;
+          font-weight: lighter;
+          font-size: 13px;
+          text-align: center;
+          margin: 1% 10%;
+        }
+      `}</style>
       <Header />
-      <h1>
+      <h2>
         About page
-      </h1>
-      <br /> <br />
-      <h3>
-        This is designed to make getting in and out of the dcotors office more faster.
-        Providing information means less wait time in the office. Fill out the form
-        and it will go directly to the office so you do not have to fill it out there.
-        This allows for the office to stay on schedule. Thank you for your time.
-      </h3>
-      <Link href="/">
-        <a>Back to home</a>
-      </Link>
+      </h2>
+      <hr />
+      <h6>If the Doc&apos;s on-time, you&apos;re on-time.</h6>
+      <p>
+        QuickDocs is designed to make getting in and out of the doctor&apos;s office faster!
+        Up-front information means less wait time in the office. Fill out the form
+        and it will be sent directly to the doctor you choose. No paper. No wait.
+      </p>
     </div>
   );
 }
