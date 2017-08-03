@@ -5,25 +5,14 @@ import withRedux from 'next-redux-wrapper';
 import {initStore} from '../services/store';
 import { getUserId } from '../actions';
 
-
-
-
-
-
 class Details extends Component {
   constructor(props) {
     super(props);
   }
 
-
-
   componentDidMount() {
     this.props.getUserId(this.props.url.query.id);
   }
-
-
-
-
 
   render() {
     const { user } = this.props;
@@ -31,61 +20,181 @@ class Details extends Component {
     // const userId = this.props.url.query.id;
     return (
       <div>
-          <Header />
+        <style jsx>{`
+          h1 {
+            margin-left: 5%;
+            font-family: arial;
+            font-weight: lighter;
+          }
+          ul {
+            list-style-type: none;
+          }
+          li {
+            font-family: arial;
+          }
+          ul > .health-history {
+            font-size: 16px;
+            text-decoration: underline;
+            margin: 1% auto 1% 2%;
+            text-align: center;
+          }
+          ul > li > .disease-history-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            border-bottom: solid .5px black;
+            margin-bottom: 1%;
+          }
+          ul > li > .teal-color {
+            background-color: #5DD1CA;
+          }
+
+          ul > li > .orange-color {
+            background-color: #f4511e;
+          }
+        `}</style>
+        <Header />
         <h1>
-          Details
+          {user.firstName}&nbsp;{user.lastName}
         </h1>
         <ul>
-          <li> {user.firstName} </li>
-          <li> {user.lastName} </li>
-          <li> {user.userName} </li>
+          <li> username: {user.userName} </li>
           <li> {user.address} </li>
           <li> {user.username} </li>
-          <li> Asthma : {JSON.stringify(user.asthma)} </li>
-          <li> Asthma Explanation: {user.asthmaExplain} </li>
-          <li> Diabetes : {JSON.stringify(user.diabetes)} </li>
-          <li> Diabetes Explanation{user.diabetesExplain} </li>
-          <li> Hypertension : {JSON.stringify(user.hypertension)} </li>
-          <li> Hypertension Explanation : {user.hypertensionExplain} </li>
-          <li> Heart Disease : {JSON.stringify(user.heartdisease)} </li>
-          <li> Heart Disease Explanation : {user.heartdiseaseExplain} </li>
-          <li> Stroke : {JSON.stringify(user.stroke)} </li>
-          <li> Stroke Explanation : {user.strokeExplain} </li>
-          <li> COPD : {JSON.stringify(user.copd)} </li>
-          <li> COPD Explanation : {user.copdExplain} </li>
-          <li> Ear/Sinus : {JSON.stringify(user.earsinus)} </li>
-          <li> Ear/Sinus Explanation{user.earsinusExplain} </li>
-          <li> Muscular/Skeletal : {JSON.stringify(user.muscularSkeletal)} </li>
-          <li> Muscular/Skeletal Explanation : {user.muscularSkeletalExplain} </li>
-          <li> Menstrual : {JSON.stringify(user.menstrual)} </li>
-          <li> Menstrual Explanation : {user.menstrualExplain} </li>
-          <li> Psychiatric : {JSON.stringify(user.psychiatric)} </li>
-          <li> Psychiatric Explanation : {user.psychiatricExplain} </li>
-          <li> Learning : {JSON.stringify(user.learning)} </li>
-          <li> Learning Explanation : {user.learningExplain} </li>
-          <li> Bleeding : {JSON.stringify(user.bleeding)} </li>
-          <li> Bleeding Explanation : {user.bleedingExplain} </li>
-          <li> Fainting : {JSON.stringify(user.fainting)} </li>
-          <li> Fainting Explanation{user.faintingExplain} </li>
-          <li> Thyroid : {JSON.stringify(user.thyroid)} </li>
-          <li> Thyroid Explanation{user.thyroidExplain} </li>
-          <li> Kidney Disease : {JSON.stringify(user.kidneyDisease)} </li>
-          <li> Kidney Disease Explanation : {user.kidneyDiseaseExplain} </li>
-          <li> Sickle Cell : {JSON.stringify(user.sickleCell)} </li>
-          <li> Sickle Cell Explanation : {user.sickleCellExplain} </li>
-          <li> Seizures : {JSON.stringify(user.seizures)} </li>
-          <li> Seizures Explanation{user.seizuresExplain} </li>
-          <li> Sleep Disorders : {JSON.stringify(user.sleepDisorders)} </li>
-          <li> Sleep Disorders Explanation{user.sleepDisordersExplaine} </li>
-          <li> G I Problems : {JSON.stringify(user.giProblems)} </li>
-          <li> G I Problems Explanation : {user.giProblemsExplain} </li>
-          <li> Surgery : {JSON.stringify(user.surgery)} </li>
-          <li> Surgery Explanation{user.surgeryExplain} </li>
-          <li> Serious Injuries : {JSON.stringify(user.seriousInjury)} </li>
-          <li> Serious Injuries Explanation{user.seriousInjuryExplain} </li>
-          <li> Other : {JSON.stringify(user.other)} </li>
-          <li> Other Explanation{user.otherExplain} </li>
+          <li className='health-history'> Health History </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Asthma : {JSON.stringify(user.asthma)}</div>
+              <div>Asthma Explanation: {user.asthmaExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Diabetes : {JSON.stringify(user.diabetes)}</div>
+              <div>Diabetes Explanation:{user.diabetesExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Hypertension : {JSON.stringify(user.hypertension)} </div>
+              <div>Hypertension Explanation : {user.hypertensionExplain} </div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Heart Disease : {JSON.stringify(user.heartdisease)} </div>
+              <div>Heart Disease Explanation : {user.heartdiseaseExplain} </div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Stroke : {JSON.stringify(user.stroke)} </div>
+              <div>Stroke Explanation : {user.strokeExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>COPD : {JSON.stringify(user.copd)}</div>
+              <div>COPD Explanation : {user.copdExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Ear/Sinus : {JSON.stringify(user.earsinus)}</div>
+              <div>Ear/Sinus Explanation{user.earsinusExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Muscular/Skeletal : {JSON.stringify(user.muscularSkeletal)}</div>
+              <div>Muscular/Skeletal Explanation : {user.muscularSkeletalExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Menstrual : {JSON.stringify(user.menstrual)}</div>
+              <div>Menstrual Explanation : {user.menstrualExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Psychiatric : {JSON.stringify(user.psychiatric)}</div>
+              <div>Psychiatric Explanation : {user.psychiatricExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Learning : {JSON.stringify(user.learning)}</div>
+              <div>Learning Explanation : {user.learningExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Bleeding : {JSON.stringify(user.bleeding)}</div>
+              <div>Bleeding Explanation : {user.bleedingExplain}</div>
+            </div>
+          </li>
 
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Fainting : {JSON.stringify(user.fainting)}</div>
+              <div>Fainting Explanation{user.faintingExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Thyroid : {JSON.stringify(user.thyroid)}</div>
+              <div>Thyroid Explanation{user.thyroidExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Kidney Disease : {JSON.stringify(user.kidneyDisease)} </div>
+              <div>Kidney Disease Explanation : {user.kidneyDiseaseExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Sickle Cell : {JSON.stringify(user.sickleCell)}</div>
+              <div>Sickle Cell Explanation : {user.sickleCellExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Seizures : {JSON.stringify(user.seizures)}</div>
+              <div> Seizures Explanation{user.seizuresExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Sleep Disorders : {JSON.stringify(user.sleepDisorders)}</div>
+              <div>Sleep Disorders Explanation{user.sleepDisordersExplaine}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>G I Problems : {JSON.stringify(user.giProblems)}</div>
+              <div>G I Problems Explanation : {user.giProblemsExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Surgery : {JSON.stringify(user.surgery)}</div>
+              <div>Surgery Explanation{user.surgeryExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div teal-color'>
+              <div>Serious Injuries : {JSON.stringify(user.seriousInjury)}</div>
+              <div>Serious Injuries Explanation{user.seriousInjuryExplain}</div>
+            </div>
+          </li>
+          <li>
+            <div className='disease-history-div orange-color'>
+              <div>Other : {JSON.stringify(user.other)}</div>
+              <div>Other Explanation{user.otherExplain}</div>
+            </div>
+          </li>
         </ul>
       </div>
     );

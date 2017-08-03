@@ -48,7 +48,7 @@ function signInPage() {
           width: 21%;
           transition: all 0.5s;f
           cursor: pointer;
-          margin: 0% 1% auto 7.5%;
+          margin: 0% 1% auto 25.75%;
         }
         button:hover {
           background-color: #33FFFF;

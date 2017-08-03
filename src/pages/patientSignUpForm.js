@@ -9,9 +9,6 @@ import {
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
-
-
-
 const FORM_VALUES = {
   userName: '',
   passWord: '',
@@ -93,30 +90,97 @@ class patientContact extends Component {
   render() {
     return (
       <div>
+        <style jsx>{`
+          h4 {
+            font-family: arial;
+            font-weight: lighter;
+            text-align: center;
+            color: #f4511e;
+          }
+          form {
+            padding: 1%;
+            margin-left: 25%;
+            background-color: #ccc;
+            width: 50%;
+            border-radius: 4px;
+          }
+          .form-div {
+            margin-left: 6.5%;
+          }
+          input[type=text], select {
+            width: 45%;
+            padding: 1% 5%;
+            margin: 0% auto 2% auto;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 9px;
+          }
+          #zip-input {
+            margin-left: 24%;
+          }
+          #small-explain-input {
+            width: 30%;
+            padding 1% 2%;
+            margin-left: 2%;
+          }
+          .DOB-input {
+            width: 45%;
+            padding: 1% 5%;
+            margin: 0% auto 2% auto;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 9px;
+          }
+          button, .button-one {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 10px;
+            padding: 1%;
+            width: 21%;
+            transition: all 0.5s;f
+            cursor: pointer;
+            margin: 0% 1% auto 18%;
+          }
+          button:hover, .button-one:hover {
+            background-color: #33FFFF;
+            color: #f4511e;
+          }
+          .button-two {
+            margin-left: 0%;
+          }
+        `}</style>
         <Header />
-        <h1>
+        <h4>
           Create a profile
-        </h1>
+        </h4>
         <form onSubmit={this.handleSubmit.bind(this)}>
-
-          <input
-            type='text'
-            name='userName'
-            placeholder='Add username'
-            defaultValue={this.state.userName}
-            onChange={this.handleInputChange.bind(this)}
-          />
-          &nbsp; &nbsp;
-
-          <input
-            type='text'
-            name='passWord'
-            placeholder='Add password'
-            defaultValue={this.state.passWord}
-            onChange={this.handleInputChange.bind(this)}
-          />
-          <br />
-
+          <div className='form-div'>
+            <input
+              type='text'
+              name='userName'
+              placeholder='Add username'
+              defaultValue={this.state.userName}
+              onChange={this.handleInputChange.bind(this)}
+            />
+            &nbsp; &nbsp;
+            <input
+              type='text'
+              name='passWord'
+              placeholder='Add password'
+              defaultValue={this.state.passWord}
+              onChange={this.handleInputChange.bind(this)}
+            />
+            <br />
             <input
               type='text'
               name='firstName'
@@ -125,8 +189,6 @@ class patientContact extends Component {
               onChange={this.handleInputChange.bind(this)}
             />
             &nbsp; &nbsp;
-
-
             <input
               type='text'
               name='lastName'
@@ -135,17 +197,14 @@ class patientContact extends Component {
               onChange={this.handleInputChange.bind(this)}
              />
             <br />
-
-            <input
-              type="String"
-              name="birthdate"
-              placeholder="mm/dd/yyyy"
+            <input className='DOB-input'
+              type='String'
+              name='birthdate'
+              placeholder='mm/dd/yyyy'
               defaultValue={this.state.birthdate}
               onChange={this.handleInputChange.bind(this)}
             />
             &nbsp; &nbsp;
-
-
             <input
               type='text'
               name='address'
@@ -154,8 +213,6 @@ class patientContact extends Component {
               onChange={this.handleInputChange.bind(this)}
             />
             <br />
-
-
             <input
               type='text'
               name='city'
@@ -164,8 +221,6 @@ class patientContact extends Component {
               onChange={this.handleInputChange.bind(this)}
             />
             &nbsp; &nbsp;
-
-
             <input
               type='text'
               name='homeState'
@@ -174,17 +229,15 @@ class patientContact extends Component {
               onChange={this.handleInputChange.bind(this)}
              />
              <br />
-
-
-          <input
-            type='text'
-            name='zip'
-            placeholder='Zip'
-            defaultValue={this.state.zip}
-            onChange={this.handleInputChange.bind(this)}
-          />
-                <br /><br /><br />
-
+            <input id='zip-input'
+              type='text'
+              name='zip'
+              placeholder='Zip'
+              defaultValue={this.state.zip}
+              onChange={this.handleInputChange.bind(this)}
+            />
+          </div>
+          <br/>
           <input
             type='radio'
             name='asthma'
@@ -193,7 +246,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='asthma'
@@ -201,13 +253,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Asthma
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='asthmaExplain'
@@ -216,7 +264,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='diabetes'
@@ -225,7 +272,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='diabetes'
@@ -233,13 +279,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Diabetes
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='diabetesExplain'
@@ -247,8 +289,7 @@ class patientContact extends Component {
             defaultValue={this.state.asthmaExplain}
             onChange={this.handleInputChange.bind(this)}
           />
-          <br /> <br />
-
+          <br/> <br/>
           <input
             type='radio'
             name='hypertension'
@@ -257,7 +298,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='hypertension'
@@ -265,13 +305,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Hypertension
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='hypertensionExplain'
@@ -280,7 +316,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='heartdisease'
@@ -289,7 +324,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='heartdisease'
@@ -297,13 +331,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Heart Disease
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='heartdiseaseExplain'
@@ -393,13 +423,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Ear / Sinus
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='earsinusExplain'
@@ -408,7 +434,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='muscularSkeletal'
@@ -417,7 +442,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='muscularSkeletal'
@@ -425,22 +449,16 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Muscular / Skeletal
-
-          &nbsp; &nbsp;
-
-          <input
+          <input id='small-explain-input'
             type='text'
             name='muscularSkeletalExplain'
             placeholder='Explain'
             defaultValue={this.state.muscularSkeletalExplain}
             onChange={this.handleInputChange.bind(this)}
           />
-          <br /> <br />
-
+        <br/> <br/>
           <input
             type='radio'
             name='menstrual'
@@ -600,7 +618,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='thyroid'
@@ -609,7 +626,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='thyroid'
@@ -617,14 +633,10 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Thyroid Condition
-
           &nbsp; &nbsp;
-
-          <input
+          <input id='small-explain-input'
             type='text'
             name='thyroidExplain'
             placeholder='Explain'
@@ -632,7 +644,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='kidneyDisease'
@@ -641,7 +652,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='kidneyDisease'
@@ -649,14 +659,10 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Kidney Disease
-
           &nbsp; &nbsp;
-
-          <input
+          <input id='small-explain-input'
             type='text'
             name='kidneyDiseaseExplain'
             placeholder='Explain'
@@ -664,7 +670,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='sickleCell'
@@ -713,13 +718,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Seizures
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='seizuresExplain'
@@ -728,7 +729,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='sleepDisorders'
@@ -737,7 +737,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='sleepDisorders'
@@ -745,14 +744,10 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Sleep Disorders
-
           &nbsp; &nbsp;
-
-          <input
+          <input id='small-explain-input'
             type='text'
             name='sleepDisordersExplain'
             placeholder='Explain'
@@ -760,7 +755,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='giProblems'
@@ -769,7 +763,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='giProblems'
@@ -777,13 +770,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           GI Problems
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='giProblemsExplain'
@@ -792,7 +781,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='surgery'
@@ -801,7 +789,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='surgery'
@@ -809,13 +796,9 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Surgeries
-
           &nbsp; &nbsp;
-
           <input
             type='text'
             name='surgeryExplain'
@@ -824,7 +807,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='seriousInjury'
@@ -833,7 +815,6 @@ class patientContact extends Component {
           />
           Yes
           &nbsp; &nbsp;
-
           <input
             type='radio'
             name='seriousInjury'
@@ -841,14 +822,10 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           No
-
           &nbsp; &nbsp;
-
           Serious Injuries
-
           &nbsp; &nbsp;
-
-          <input
+          <input id='small-explain-input'
             type='text'
             name='seriousInjuryExplain'
             placeholder='Explain'
@@ -856,7 +833,6 @@ class patientContact extends Component {
             onChange={this.handleInputChange.bind(this)}
           />
           <br /> <br />
-
           <input
             type='radio'
             name='other'
@@ -887,26 +863,18 @@ class patientContact extends Component {
             defaultValue={this.state.otherExplain}
             onChange={this.handleInputChange.bind(this)}
           />
-          <br /> <br />
-
-
-
-
-          <br /><br />
-          <input type="submit" value="Submit" />
+          <br/>
+          <br/>
+          <input className='button-one' type="submit" value="Submit" />
           <Link href={'/listOfPatients'}>
             <button>
-              View Patients
+              View Doctors
             </button>
           </Link>
-
-
-
         </form>
       </div>
     );
   }
-
 }
 
 function mapDispatchToProps(dispatch) {
@@ -919,7 +887,6 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-
 
 patientContact.propTypes = {
   onSubmit: PropTypes.func.isRequired,
