@@ -121,6 +121,9 @@ class patientContact extends Component {
             text-align: center;
             font-size: 9px;
           }
+          #zip-input {
+            margin-left: 24%;
+          }
           #small-explain-input {
             width: 30%;
             padding 1% 2%;
@@ -229,7 +232,7 @@ class patientContact extends Component {
               onChange={this.handleInputChange.bind(this)}
              />
              <br />
-            <input
+            <input id='zip-input'
               type='text'
               name='zip'
               placeholder='Zip'
