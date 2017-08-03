@@ -32,17 +32,14 @@ function Header() {
        <a>About</a>
      </Link>
      &nbsp; &nbsp;
-     <Link href="/signUpPage">
+     <Link href="/patientSignUpForm">
        <a>Sign-Up</a>
      </Link>
      &nbsp; &nbsp;
-     <Link href="/signInPage">
-     <a>Log In</a>
+     <Link href="/listOfPatients">
+     <a>List of Patients</a>
      </Link>
-     &nbsp; &nbsp;
-     <Link href="/logOutPage">
-       <a>Log Out</a>
-     </Link>
+     
      <hr/>
     </div>
   );
