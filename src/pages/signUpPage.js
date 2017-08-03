@@ -59,7 +59,9 @@ function signUpPage() {
         }
       `}</style>
       <h3>You&apos;re one step closer!</h3>
-      <hr/>
+      <marquee>
+        <hr/>
+      </marquee>
       <form>
         <div className='input-area'>
           <input type="text" name="username" value="" placeholder="username" />
