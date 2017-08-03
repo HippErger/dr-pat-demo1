@@ -2,24 +2,32 @@ import React from 'react';
 import Header from '../components/Header';
 import Link from 'next/link';
 
-
-
-
 function IndexPage() {
-  const titleName = 'Dr. Patient';
+  const titleName = 'QuickDocs';
   return (
     <div>
       <style jsx>{`
         h1 {
           font-family: arial;
           font-weight: normal;
+          text-align: center;
+          font-size: 15px;
+        }
+        hr {
+          border: 0;
+          height: 1px;
+          background: #333;
+          background-image: linear-gradient(to right, #ccc, #33FFFF, #ccc);
         }
         p {
           font-family: arial;
           font-weight: lighter;
+          text-align: center;
         }
         .welcome-message {
-          width: 48%;
+          width: 50%;
+          margin-left: 25%;
+
         }
         button {
           display: inline-block;
@@ -30,10 +38,10 @@ function IndexPage() {
           text-align: center;
           font-size: 10px;
           padding: 5px;
-          width: 100px;
+          width: 25%;
           transition: all 0.5s;
           cursor: pointer;
-          margin: 0px 5px;
+          margin: 1% 37%;
         }
         button span {
           cursor: pointer;
@@ -48,6 +56,11 @@ function IndexPage() {
           top: 0;
           right: -20px;
           transition: 0.5s;
+        }
+        button:hover {
+          color: #f4511e;
+          background-color: #33FFFF;
+
         }
         button:hover span {
           padding-right: 25px;
@@ -65,6 +78,7 @@ function IndexPage() {
         <h1>
            Welcome to, {titleName}
         </h1>
+        <hr />
         <div className='welcome-message'>
           <p>
             At {titleName} we are committed your privacy, security and ease
