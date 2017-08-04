@@ -84,7 +84,7 @@ function IndexPage() {
             At {titleName} we are committed your privacy, security and ease
             of access to quality healthcare. Start by selecting a doctor or creating a profile.
           </p>
-          <Link href="/signUpPage">
+          <Link href="/patientSignUpForm">
             <button>
               <span>Create Profile</span>
             </button>
