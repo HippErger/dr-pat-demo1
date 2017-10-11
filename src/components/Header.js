@@ -5,24 +5,7 @@ function Header() {
   // add style inline-block
   return (
     <div>
-    <style jsx>{`
-       a {
-         color: black;
-         font-family: "arial";
-         font-size: 12px;
-         font-variant: small-caps;
-         text-decoration: none;
-         margin: 0 0 0 3%;
-       }
-       .first-a-tag {
-         margin: 0 0 0 33%;
-       }
-       hr {
-         height: 12px;
-         border: 0;
-         box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-       }
-     `}</style>
+
      <Link href="/">
        <a className="first-a-tag">Home</a>
      </Link>
@@ -39,6 +22,28 @@ function Header() {
      <a>List of Patients</a>
      </Link>
      <hr/>
+
+
+
+
+
+
+     <style jsx>{`
+        a {
+          color: black;
+          font-family: "arial";
+          font-size: 12px;
+          font-variant: small-caps;
+          text-decoration: none;
+          margin: auto;
+        }
+
+        hr {
+          height: 12px;
+          border: 0;
+          box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+        }
+      `}</style>
     </div>
   );
 }
