@@ -2,12 +2,12 @@
   "name": "nextjs-express-starter",
   "version": "1.0.0",
   "main": "src/index.js",
-  "repository": "https://github.com/ivome/nextjs-express-starter.git",
+  "repository": "https://github.com/saf0911/dr-pat-demo1.git",
   "author": "Ivo Meißner <info@overtronic.com>",
   "license": "MIT",
   "scripts": {
     "dev": "babel-node src/index",
-    "start": "babel-node src/pages/index.js",
+    "start": "babel-node src/index.js",
     "lint": "eslint src"
   },
   "dependencies": {
