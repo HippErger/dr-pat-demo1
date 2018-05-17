@@ -1,5 +1,5 @@
 import express from 'express';
-import userController from '../controllers/UserController';
+import userController from '../controllers/userController';
 
 
 const router = express.Router();
@@ -13,6 +13,9 @@ router.get('/users/:id', userController.show);
 router.delete('/users/:id', userController.remove);
 
 router.put('/users/:id', userController.update);
+
+
+
 
 
 export default router;

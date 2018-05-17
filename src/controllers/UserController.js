@@ -1,4 +1,4 @@
-import User from '../models/patientContactModel';
+import User from '../models/Users';
 
 const userController = {
 
@@ -46,12 +46,12 @@ const userController = {
 
 
   update: (request, response, next) => {
-    User.findByIdAndUpdate(request.params.id).exec()
+    User.findById(request.params.id).exec()
       .then(user => {
         user.firstName = request.body.firstName || user.firstName;
         user.lastName = request.body.lastName || user.lastName;
-        user.passWord = request.body.passWord || user.passWord;
-        user.asthma = request.body.asthma || user.asthma;
+        user.avatar = request.body.avatar || user.avatar;
+        user.interests = request.body.interests || user.interests;
         user.userName = request.body.userName || user.userName;
 
         return user.save();
