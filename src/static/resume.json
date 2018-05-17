@@ -1,0 +1,109 @@
+{
+  "basics": {
+    "name": "Scott Foster",
+    "label": "Programmer",
+    "picture": "",
+    "email": "saf0911@gmail.com",
+    "phone": "(773) 910-88803",
+    "website": "",
+    "summary": "Over 8 years of staying at home raising my three kids I needed a new direction. My parenting position was being outsourced to the school system. That is when I decided that coding is my calling. the skills I learned are transitioning nicely. Problem solving, effective communication, project management, and effective team building are soft skills that I have developed and will use to help team succeed. ",
+    "location": {
+      "address": "3310 Stardust Dr",
+      "postalCode": "TX 78757",
+      "city": "Austin",
+      "countryCode": "US",
+      "region": "Texas"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Foster Household",
+      "position": "Stay at Home Dad",
+      "website": "",
+      "startDate": "2008-12-01",
+      "endDate": "2017-8",
+      "summary": "",
+      "highlights": [
+        "Abigail",
+        "Annaliese",
+        "Cameron"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Gullett Elementary",
+      "position": "Web Site and Fish Maintenance",
+      "website": "https://gullettgeckos.com/",
+      "startDate": "2016-06-01",
+      "endDate": "Now",
+      "summary": "Update and maintain the site adding content and pages to make sure the school is passing along all pertinent information. Overhauling the fish tank so they have an environment where they can thrive. ",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Austin Coding Academy",
+      "area": "Information Technology",
+      "studyType": "Certificate",
+      "startDate": "2016-10-01",
+      "endDate": "2017-07-01",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Kendall College",
+      "area": "Culinary Arts",
+      "studyType": "A.A",
+      "startDate": "2007-10-5",
+      "endDate": "2008-12-2",
+      "gpa": "3.5",
+      "courses": []
+    },
+    {
+      "institution": "Columbia College",
+      "area": "Business Administration",
+      "studyType": "B.A",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "3.0",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Proficiencies ",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Redux",
+        "Next"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [
+    {
+      "name": "Food",
+      "keywords": [
+        "Cooking",
+        "Eating"
+      ]
+    },
+    {
+      "name": "Photography",
+      "keywords": [
+        "Fuji X-Series",
+        "Wildlife",
+        "Family"
+      ]
+    }
+  ],
+  "references": []
+}
