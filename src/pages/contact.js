@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // import Link from 'next/link';
 import Header from '../components/Header';
 import withRedux from 'next-redux-wrapper';
-import {initStore} from '../store';
+import {initStore} from '..service//store';
 import {
   createUser,
   loadUsers,
