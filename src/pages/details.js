@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/Header';
 import PropTypes from 'prop-types';
 import withRedux from 'next-redux-wrapper';
-import {initStore} from '..services/store';
+import {initStore} from '../services/store';
 import { getUserId } from '../actions';
 
 

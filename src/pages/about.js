@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import ListOfUsers from '../components/ListOfUsers';
 import withRedux from 'next-redux-wrapper';
-import {initStore} from '../store';
+import {initStore} from '../services/store';
 
 
 
