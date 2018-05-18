@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {loadUsers, deleteUser} from '../actions';
 import withRedux from 'next-redux-wrapper';
-import {initStore} from '../store';
+import {initStore} from '../services/store';
 
 
 class ListOfUsers extends Component {
