@@ -57,25 +57,25 @@ function Photo() {
         <li><img className='photos' src='/static/photopage/DSCF7228.jpg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF7507.jpg' alt='flower pic'/></li>
 
-        // <li><img className='photos' src='/static/photopage/DSCF7543.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF8184.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF8365.jpg' alt='flower pic'/></li>
-        //
-        // <li><img className='photos' src='/static/photopage/DSCF8430.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF8579.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF8596.jpg' alt='flower pic'/></li>
-        //
-        // <li><img className='photos' src='/static/photopage/DSCF8666.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF8710.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF8734.jpg' alt='flower pic'/></li>
-        //
-        // <li><img className='photos' src='/static/photopage/DSCF8741.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF8910.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF9011.jpg' alt='flower pic'/></li>
-        //
-        // <li><img className='photos' src='/static/photopage/DSCF9157.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF9181.jpg' alt='flower pic'/></li>
-        // <li><img className='photos' src='/static/photopage/DSCF9541.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF7543.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF8184.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF8365.jpg' alt='flower pic'/></li>
+
+        <li><img className='photos' src='/static/photopage/DSCF8430.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF8579.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF8596.jpg' alt='flower pic'/></li>
+
+        <li><img className='photos' src='/static/photopage/DSCF8666.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF8710.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF8734.jpg' alt='flower pic'/></li>
+
+        <li><img className='photos' src='/static/photopage/DSCF8741.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF8910.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9011.jpg' alt='flower pic'/></li>
+
+        <li><img className='photos' src='/static/photopage/DSCF9157.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9181.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9541.jpg' alt='flower pic'/></li>
 
       </ul>
 
