@@ -200,21 +200,24 @@ function IndexPage() {
 
 
             h1 {
+              margin-left: 10px;
               font-size: 36px;
               font-family: ebgaramond;
 
             }
 
             h3 {
+              margin-left: 10px;
               font-family: quicksand;
             }
 
             h4 {
+              margin-left: 10px;
               font-family: ebgaramond;
             }
 
             h5 {
-              margin-left: 10px;
+              margin-left: 20px;
               font-family: quicksand;
             }
 
@@ -223,13 +226,15 @@ function IndexPage() {
               text-decoration: none;
               background-image: url(/static/img/compypic.jpeg);
               background-size: 100% 100%;
+              padding: 0px;
+              marging: 0px;
               }
 
 
             .frontPageText {
               display: inline;
               text-align: left;
-              padding-left: 10em;
+              margin-left: 10px;
             }
 
           }
