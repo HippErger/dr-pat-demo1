@@ -28,9 +28,12 @@ function Header() {
 
 
     <style jsx>{`
+      @import url('https://fonts.googleapis.com/css?family=Quicksand');
+      @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand');
+
       @media only screen and (min-width : 321px) and (max-width : 767px)  {
         @font-face {
-          font-family: 'ebgaramond';
+            font-family: 'EB Garamond', serif;
           src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
         }
 
@@ -51,7 +54,7 @@ function Header() {
             'logo'
             'navBar-Links';
           align-self: center;
-          font-family: ebgaramond;
+          font-family: 'EB Garamond', serif;
           grid-gap: 5px 5px;
 
         }
@@ -117,7 +120,7 @@ function Header() {
 
     @media only screen and (min-width: 768px) {
       @font-face {
-        font-family: 'ebgaramond';
+          font-family: 'EB Garamond', serif;
         src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
       }
 
@@ -137,8 +140,8 @@ function Header() {
         grid-template-areas:
         'logo   navbar-Links';
         grid-gap: 5px 10px;
-        font-family: ebgaramond;
-        
+        font-family: 'EB Garamond', serif;
+
   }
 
 
