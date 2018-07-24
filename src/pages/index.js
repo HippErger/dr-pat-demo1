@@ -61,33 +61,33 @@ function IndexPage() {
 
           @media only screen and (min-width : 321px) and (max-width: 511px)  {
             @font-face {
-              font-family: 'ebgaramond';
+              font-family: 'EB Garamond', serif;
               src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
             }
 
             @font-face {
-              font-family: 'quicksand';
+            font-family: 'Quicksand', sans-serif;
               src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
             }
 
 
             h1 {
               font-size: 24px;
-              font-family: ebgaramond;
+              font-family: 'EB Garamond', serif;
 
             }
 
             h3 {
-              font-family: quicksand;
+              font-family: 'Quicksand', sans-serif;
             }
 
             h4 {
-              font-family: ebgaramond;
+              font-family: 'EB Garamond', serif;
             }
 
             h5 {
               margin-left: 10px;
-              font-family: quicksand;
+              font-family: 'Quicksand', sans-serif;
             }
 
             .home {
@@ -124,31 +124,31 @@ function IndexPage() {
             }
 
             @font-face {
-              font-family: 'ebgaramond';
+              font-family: 'EB Garamond', serif;
               src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
             }
 
             @font-face {
-              font-family: 'quicksand';
+              font-family: 'Quicksand', sans-serif;
               src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
             }
 
             h1 {
               font-size: 36px;
-              font-family: ebgaramond;
+              font-family: 'EB Garamond', serif;
             }
 
             h3 {
-              font-family: quicksand;
+              font-family: 'Quicksand', sans-serif;
             }
 
             h4 {
-              font-family: ebgaramond;
+              font-family: 'EB Garamond', serif;
             }
 
             h5 {
               margin-left: 10px;
-              font-family: quicksand;
+              font-family: 'Quicksand', sans-serif;
             }
 
             .home {
@@ -194,7 +194,7 @@ function IndexPage() {
             }
 
             @font-face {
-              font-family: 'quicksand';
+              font-family: 'Quicksand', sans-serif;
               src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
             }
 
@@ -202,23 +202,23 @@ function IndexPage() {
             h1 {
               margin-left: 10px;
               font-size: 36px;
-              font-family: ebgaramond;
+              font-family: 'EB Garamond', serif;
 
             }
 
             h3 {
               margin-left: 10px;
-              font-family: quicksand;
+              font-family: 'Quicksand', sans-serif;
             }
 
             h4 {
               margin-left: 10px;
-              font-family: ebgaramond;
+              font-family: 'EB Garamond', serif;
             }
 
             h5 {
               margin-left: 20px;
-              font-family: quicksand;
+              font-family: 'Quicksand', sans-serif;
             }
 
             .home {
