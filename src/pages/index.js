@@ -78,7 +78,7 @@ function IndexPage() {
             }
 
             h3 {
-              font-family: 'Quicksand', sans-serif;
+              font-family: 'EB Garamond', serif;
             }
 
             h4 {
@@ -87,7 +87,7 @@ function IndexPage() {
 
             h5 {
               margin-left: 10px;
-              font-family: 'Quicksand', sans-serif;
+              font-family: 'EB Garamond', serif;
             }
 
             .home {
@@ -139,7 +139,7 @@ function IndexPage() {
             }
 
             h3 {
-              font-family: 'Quicksand', sans-serif;
+              font-family: 'EB Garamond', serif;
             }
 
             h4 {
@@ -148,7 +148,7 @@ function IndexPage() {
 
             h5 {
               margin-left: 10px;
-              font-family: 'Quicksand', sans-serif;
+              font-family: 'EB Garamond', serif;
             }
 
             .home {
@@ -208,7 +208,7 @@ function IndexPage() {
 
             h3 {
               margin-left: 10px;
-              font-family: 'Quicksand', sans-serif;
+              font-family: 'EB Garamond', serif;
             }
 
             h4 {
@@ -218,7 +218,7 @@ function IndexPage() {
 
             h5 {
               margin-left: 20px;
-              font-family: 'Quicksand', sans-serif;
+              font-family: 'EB Garamond', serif;
             }
 
             .home {
