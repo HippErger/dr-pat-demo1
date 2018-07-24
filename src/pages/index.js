@@ -9,6 +9,7 @@ import {initStore} from '../services/store';
 
 
 
+
 function IndexPage() {
 
   return (
@@ -55,7 +56,8 @@ function IndexPage() {
       </div>
 
         <style jsx>{`
-
+          @import url('https://fonts.googleapis.com/css?family=Quicksand');
+          @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand');
 
           @media only screen and (min-width : 321px) and (max-width: 511px)  {
             @font-face {
