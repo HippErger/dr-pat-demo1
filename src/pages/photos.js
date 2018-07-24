@@ -14,7 +14,7 @@ function Photo() {
       </h2>
       <ul>
         <li><img className='photos' src='/static/photopage/DSCF0362.jpg' alt='flower pic'/></li>
-        <li><img className='photos' src='/static/photopage/DSCF0483.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF0483.JPG' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF0488.jpg' alt='flower pic'/></li>
 
         <li><img className='photos' src='/static/photopage/DSCF0554.jpg' alt='flower pic'/></li>
