@@ -34,8 +34,6 @@ function Header() {
           src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
         }
 
-
-
         a {
           text-align: center;
           align-self: center;
@@ -48,26 +46,25 @@ function Header() {
           background-color: white;
           display: grid;
           grid-template-columns: 1fr;
-          grid-template-rows: 1fr ;
+          grid-template-rows: 2fr 1fr ;
           grid-template-areas:
-          'logo '
-          'navBarLinks';
+            'logo'
+            'navBar-Links';
           align-self: center;
           font-family: ebgaramond;
-          grid-gap: 10px 10px;
-          margin-bottom: -50px;
-
+          grid-gap: 5px 5px;
 
         }
 
         .navbar-Links {
-          grid-area: navBarLinks;
+          // grid-area: navBarLinks;
           display: grid;
-          grid-template-rows: repeat(5, 1fr) ;
+          grid-template-rows: 1fr ;
+          grid-template-columns: repeat(4, 1fr) ;
           grid-template-areas:
           'home portfolio contact resume photos';
-          grid-gap: 5px 0px;
-
+          grid-gap: 5px 5px;
+          align-self: center;
 
         }
 
@@ -76,9 +73,6 @@ function Header() {
           display: inline;
           text-decoration: none;
           align-self: center;
-
-
-
         }
 
         .navbar-home {
@@ -121,16 +115,11 @@ function Header() {
 
 
 
-
-
-
     @media only screen and (min-width: 768px) {
       @font-face {
         font-family: 'ebgaramond';
         src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
       }
-
-
 
       a {
         text-align: center;
@@ -149,7 +138,7 @@ function Header() {
         'logo   navbar-Links';
         grid-gap: 5px 10px;
         font-family: ebgaramond;
-        margin-bottom: -30px;
+        
   }
 
 

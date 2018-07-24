@@ -17,7 +17,6 @@ function IndexPage() {
         <Header />
       </div>
       <div className='home'>
-        <img className='frontPagePic' src='/static/img/compypic.jpeg' alt='no pics today' />
         <div className='frontPageText'>
           <h1>
             Scott Foster
@@ -52,11 +51,7 @@ function IndexPage() {
           <h5>
             Cooking, Eating, Photography
           </h5>
-
-
-
         </div>
-
       </div>
 
         <style jsx>{`
@@ -99,18 +94,17 @@ function IndexPage() {
               background-color: white;
               display: grid;
               grid-template-columns: 1fr;
-              grid-template-rows: repeat(2, 1fr);
+              grid-template-rows: 1fr 2fr;
               grid-template-areas:
-                'pic'
-                'text'
-              grid-gap: 5px 10px;
+               'pic' 'text'
+              grid-gap: 0px 5px;
               justify-content: flex-start;
-              }
+            }
 
             .frontPagePic {
               grid-area: pic;
-              width: 100%;
-              display: inline;
+              width: 100%
+              //height: 100%;
             }
 
             .frontPageText {
@@ -118,18 +112,15 @@ function IndexPage() {
               display: inline;
               text-align: left;
               margin-left: 1em;
-              margin-top: 17em;
-
             }
           }
 
 
-
-
-
-
-
           @media only screen and (min-width : 512px) and (max-width: 767px) {
+            body {
+              margin: 0;
+            }
+
             @font-face {
               font-family: 'ebgaramond';
               src: url('../static/fonts/ebgaramond/EBGaramond-Regular.ttf') format('truetype')
@@ -140,11 +131,9 @@ function IndexPage() {
               src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
             }
 
-
             h1 {
               font-size: 36px;
               font-family: ebgaramond;
-
             }
 
             h3 {
@@ -167,19 +156,20 @@ function IndexPage() {
               padding: 0em;
               background-color: white;
               display: grid;
-              grid-template-columns: 2fr 2fr ;
-              grid-template-rows: 2fr;
+              grid-template-columns: 1fr;
+              grid-template-rows:  1 fr;
               grid-template-areas:
-                'pic text'
-
+                'text'
               grid-gap: 5px 10px;
               justify-content: flex-start;
+              background-image: url(/static/img/compypic.jpeg);
+              background-size: 100% 100%;
               }
 
             .frontPagePic {
               grid-area: pic;
               width: 100%;
-              display: inline;
+              display: none;
             }
 
             .frontPageText {
@@ -187,9 +177,7 @@ function IndexPage() {
               display: inline;
               text-align: left;
               margin-left: 1em;
-              margin-top: 30em;
             }
-
           }
 
 
@@ -231,33 +219,15 @@ function IndexPage() {
             .home {
               list-style-type: none;
               text-decoration: none;
-              margin: 0;
-              padding: 0em;
-              background-color: white;
-              display: grid;
-              grid-template-columns: 2fr;
-              grid-template-rows: 2fr 2fr;
-              grid-template-areas:
-                'pic'
-                'text'
-
-              grid-gap: 5px 10px;
-              justify-content: flex-start;
+              background-image: url(/static/img/compypic.jpeg);
+              background-size: 100% 100%;
               }
 
-            .frontPagePic {
-              grid-area: pic;
-              width: 100%;
-              display: inline;
-            }
 
             .frontPageText {
-              grid-area: text;
               display: inline;
               text-align: left;
-              margin-left: 5em;
-              margin-top: 7em
-
+              padding-left: 10em;
             }
 
           }
