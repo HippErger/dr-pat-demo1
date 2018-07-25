@@ -13,10 +13,7 @@ import {initStore} from '../services/store';
 function IndexPage() {
 
   return (
-    <div>
-      <div>
-        <Header />
-      </div>
+    <div className='firstPage'>
       <div className='home'>
         <div className='frontPageText'>
           <h1>
@@ -90,6 +87,10 @@ function IndexPage() {
               font-family: 'EB Garamond', serif;
             }
 
+            .firstPage {
+              background-image: url(/static/img/binoculars-fog-foggy.jpg)
+            }
+
             .home {
               list-style-type: none;
               text-decoration: none;
@@ -151,6 +152,10 @@ function IndexPage() {
               font-family: 'EB Garamond', serif;
             }
 
+            .firstPage {
+              background-image: url(/static/img/binoculars-fog-foggy.jpg)
+            }
+
             .home {
               list-style-type: none;
               text-decoration: none;
@@ -164,7 +169,7 @@ function IndexPage() {
                 'text'
               grid-gap: 5px 10px;
               justify-content: flex-start;
-              background-image: url(/static/img/compypic.jpeg);
+              // background-image: url(/static/img/compypic.jpeg);
               background-size: 100% 100%;
               }
 
@@ -198,7 +203,6 @@ function IndexPage() {
               src: url('../static/fonts/quicksand/Quicksand-Regular.ttf') format('truetype')
             }
 
-
             h1 {
               margin-left: 10px;
               font-size: 36px;
@@ -221,11 +225,17 @@ function IndexPage() {
               font-family: 'EB Garamond', serif;
             }
 
+            .firstPage {
+              background-image: url(/static/img/binoculars-fog-foggy-1136815.jpg)
+              background-size: 100% 100%;
+              margin-top: 50px;
+            }
+
             .home {
               list-style-type: none;
               text-decoration: none;
-              background-image: url(/static/img/compypic.jpeg);
-              background-size: 100% 100%;
+              // background-image: url(/static/img/compypic.jpeg);
+              // background-size: 100% ;
               padding: 0px;
               marging: 0px;
               }

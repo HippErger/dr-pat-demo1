@@ -56,7 +56,7 @@ function Header() {
           align-self: center;
           font-family: 'EB Garamond', serif;
           grid-gap: 5px 5px;
-
+          color: #054A25;
         }
 
         .navbar-Links {
@@ -68,6 +68,7 @@ function Header() {
           'home portfolio contact resume photos';
           grid-gap: 5px 5px;
           align-self: center;
+          color: #054A25;
         }
 
         .navbar-logo {
@@ -82,7 +83,7 @@ function Header() {
           grid-area: home;
           display: inline;
           text-decoration: none;
-
+          color: #054A25;
 
         }
 
@@ -90,14 +91,14 @@ function Header() {
           grid-area: portfolio;
           display: inline;
           text-decoration: none;
-
+          color: #054A25;
         }
 
         .navbar-contact {
           grid-area: contact;
           display: inline;
           text-decoration: none;
-
+          color: #054A25;
         }
 
         .navbar-resume {
@@ -111,7 +112,6 @@ function Header() {
           grid-area: photos;
           display: inline;
           text-decoration: none;
-
 
         }
       }
@@ -166,7 +166,7 @@ function Header() {
         align-self: center;
         margin-top: 25px;
         font-weight: bolder;
-        color: rgba(5, 74, 37);
+        color: rgb(5, 74, 37);
       }
 
       .navbar-home {
