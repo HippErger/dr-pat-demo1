@@ -68,10 +68,10 @@ function Header() {
           'home portfolio contact resume photos';
           grid-gap: 5px 5px;
           align-self: center;
-
         }
 
         .navbar-logo {
+          color: rgb(5, 74, 37);
           grid-area: logo;
           display: inline;
           text-decoration: none;
@@ -165,6 +165,8 @@ function Header() {
         padding-bottom: 0px;
         align-self: center;
         margin-top: 25px;
+        font-weight: bolder;
+        color: rgba(5, 74, 37);
       }
 
       .navbar-home {
