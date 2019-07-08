@@ -79,7 +79,7 @@ class ListOfPatients extends Component {
                 <li> {user.lastName} </li>
                 <li className='user-name'> username: {user.userName} </li>
               </ul>
-              <Link href={`/details?id=${user._id}`} >
+              <Link href={`/details?id=${user._id}`} as={`/details/user}`} prefetch>
                 <button>
                 View Patient
                 </button>

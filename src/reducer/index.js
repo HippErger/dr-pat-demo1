@@ -1,6 +1,5 @@
 import {combineReducers} from 'redux';
 
-
 function users(state = [], action) {
   if (action.type === 'USERS_LOADED') {
     return action.value;
@@ -18,7 +17,6 @@ function user(state = {}, action) {
 
 const rootReducer = combineReducers({
   users,
-  user,
-
+  user
 });
 export default rootReducer;
