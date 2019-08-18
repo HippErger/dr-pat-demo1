@@ -17,7 +17,7 @@ function Photo() {
         <li><img className='photos' src='/static/photopage/DSCF9331.jpg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF9321.jpg' alt='flower pic'/></li>
 
-        <li><img className='photos' src='/static/photopage/DSCF0554.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9296.jpg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF0564.jpg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF0658.jpg' alt='flower pic'/></li>
 
