@@ -9,6 +9,7 @@ function IndexPage() {
 
   return (
     <div className='firstPage'>
+      <Header />
       <div className='home'>
         <div className='frontPageText'>
           <h1>
