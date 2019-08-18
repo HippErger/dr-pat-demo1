@@ -5,11 +5,6 @@ import withRedux from 'next-redux-wrapper';
 import {initStore} from '../services/store';
 
 
-
-
-
-
-
 function IndexPage() {
 
   return (

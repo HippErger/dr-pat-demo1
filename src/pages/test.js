@@ -11,11 +11,11 @@ function TestPage() {
         <h1> Looking for a Project Manager? </h1>
         <h2> Take a peek inside </h2>
         <div className='buttonContainer'>
-          <button className='binocularButton' >
+          <button onClick="toggleView();" className='binocularButton'>
             <div className='binocularView'>
-              <h6 className='binocluarText'>
-                I am looking for you too
-              </h6>
+            <h1 className='binocluarText'>
+              <span>I am looking for you too</span>
+            </h1>
               <a className="resume-download"
                 href="/static/ScottFosterResume.pdf" download="Scott-Foster-Resume">
                   Download PDF Resume
@@ -49,10 +49,9 @@ function TestPage() {
           width: 100%;
           position: fixed;
           background-image: url('/static/img/binoculars-fog-foggy-1136815.jpg');
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-          background-size: cover;;
+          background-size: 100%;
+        background-color: #272729;
+        background-repeat: no-repeat;
 
 
         }
@@ -78,7 +77,7 @@ function TestPage() {
           z-index: 1;
         }
 
-        .binocularButton:hover {
+        .binocularButton {
           transform: scale(5);
           transform: 100s ease-in-out;
           opacity: 1;
@@ -89,17 +88,25 @@ function TestPage() {
         }
 
         .binocularView {
+          transform: scale(5);
+          transform: 100s ease-in-out;
+          opacity: 1;
+          background-attachment: inherit;
+          background-image: url('/static/img/DSCF6548.jpg');
+          background-size: cover;
+          position: relative;
           position: fixed;
-          top: 25%;
+          top: 20%;
           left: 5%;
-          width: 50%;
-          display:flex;
+          width: 35%;
+          display:block;
           align-items:top;
         }
 
         .binocluarText {
           color: black;
-          justify-content:flex-start;
+          width:
+
         }
 
         .resume-download {
