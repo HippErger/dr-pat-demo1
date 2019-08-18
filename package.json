@@ -1,6 +1,10 @@
 {
-  "name": "nextjs-express-starter",
+  "name": "myapp",
+  "description": "a really cool app",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.9.1"
+  },
   "main": "src/index.js",
   "repository": "https://github.com/ivome/nextjs-express-starter.git",
   "author": "Ivo Meißner <info@overtronic.com>",
@@ -12,7 +16,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
@@ -22,6 +26,7 @@
     "mongoose": "^4.11.4",
     "next": "^3.0.1-beta.8",
     "next-redux-wrapper": "^1.2.0",
+    "node": "^12.8.1",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
     "passport-local": "^1.0.0",
