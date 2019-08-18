@@ -13,9 +13,9 @@ function Photo() {
         Take a break look at some pictures.
       </h2>
       <ul>
-        <li><img className='photos' src='/static/photopage/DSCF0362.jpg' alt='flower pic'/></li>
-        <li><img className='photos' src='/static/photopage/DSCF0483.jpg' alt='flower pic'/></li>
-        <li><img className='photos' src='/static/photopage/DSCF0488.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9344.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9331.jpg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9321.jpg' alt='flower pic'/></li>
 
         <li><img className='photos' src='/static/photopage/DSCF0554.jpg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF0564.jpg' alt='flower pic'/></li>
