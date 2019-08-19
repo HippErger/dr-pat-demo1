@@ -8,7 +8,7 @@ function Photo() {
 
   return (
     <div>
-      <Header />
+      // <Header />
       <h2>
         Take a break look at some pictures.
       </h2>
