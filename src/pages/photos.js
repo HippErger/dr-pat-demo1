@@ -31,7 +31,7 @@ function Photo() {
 
         <li><img className='photos' src='/static/photopage/DSCF9278.jpeg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF9276.jpeg' alt='flower pic'/></li>
-        <li><img className='photos' src='/static/photopage/DSCF9276.jpeg' alt='flower pic'/></li>
+        <li><img className='photos' src='/static/photopage/DSCF9277.jpg' alt='flower pic'/></li>
 
         <li><img className='photos' src='/static/photopage/DSCF9275.jpeg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF9274.jpeg' alt='flower pic'/></li>
@@ -41,7 +41,7 @@ function Photo() {
         <li><img className='photos' src='/static/photopage/DSCF9162.jpeg' alt='flower pic'/></li>
         <li><img className='photos' src='/static/photopage/DSCF9160.jpeg' alt='flower pic'/></li>
 
-        
+
 
       </ul>
 
@@ -63,8 +63,8 @@ function Photo() {
           padding: 0em;
           background-color: white;
           display: grid;
-          grid-template-columns:  2fr 2fr 2fr ;
-          grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns:  2fr 2fr 2fr;
+          // grid-template-rows:  100%;
           grid-template-areas:
           'photo photo photo';
           grid-gap: 10px 10px;
