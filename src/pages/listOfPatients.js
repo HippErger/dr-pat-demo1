@@ -16,6 +16,34 @@ class ListOfPatients extends Component {
   render() {
     return (
       <div>
+
+      <Header />
+        {this.props.users.map((user, key) => {
+          return (
+            <div key={key} className='user-div'>
+              <ul>
+                <li className='first-name'> {user.firstName} </li>
+                <li> {user.lastName} </li>
+                <li className='user-name'> username: {user.userName} </li>
+              </ul>
+              <Link href={`/details?id=${user._id}`} as={`/details/user}`} prefetch>
+                <button>
+                View Patient
+                </button>
+              </Link>
+              <Link href={`patientSignUpForm?id=${user._id}`}>
+                <button>
+                  blank for a reason
+                </button>
+              </Link>
+              <button onClick=
+                {() => this.props.deleteUser(`${user._id}`)} >
+                Delete User
+              </button>
+            </div>
+          );
+        })}
+
         <style jsx>{`
           .user-div {
             width: 40%;
@@ -70,32 +98,7 @@ class ListOfPatients extends Component {
             background-color: #33FFFF;
           }
         `}</style>
-      <Header />
-        {this.props.users.map((user, key) => {
-          return (
-            <div key={key} className='user-div'>
-              <ul>
-                <li className='first-name'> {user.firstName} </li>
-                <li> {user.lastName} </li>
-                <li className='user-name'> username: {user.userName} </li>
-              </ul>
-              <Link href={`/details?id=${user._id}`} as={`/details/user}`} prefetch>
-                <button>
-                View Patient
-                </button>
-              </Link>
-              <Link href={`patientSignUpForm?id=${user._id}`}>
-                <button>
-                  blank for a reason
-                </button>
-              </Link>
-              <button onClick=
-                {() => this.props.deleteUser(`${user._id}`)} >
-                Delete User
-              </button>
-            </div>
-          );
-        })}
+        
       </div>
     );
   }

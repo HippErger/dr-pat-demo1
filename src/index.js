@@ -25,7 +25,7 @@ nextApp.prepare().then(() => {
 
   // Define all you backend handlers here...
   mongoose.Promise = global.Promise;
-  mongoose.connect('mongodb://heroku_nv8wv6z2:v5eb88j1j0aukbsbbu3mb2dtes@ds129023.mlab.com:29023/heroku_nv8wv6z2', {
+  mongoose.connect('mongodb://saf0911:Memphis459@ds151973.mlab.com:51973/scottsjobsearch', {
     useMongoClient: true,
   });
 

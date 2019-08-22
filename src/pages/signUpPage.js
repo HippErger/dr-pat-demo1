@@ -6,6 +6,37 @@ import Header from '../components/Header';
 function signUpPage() {
   return (
     <div>
+      <Header />
+      <h3>You&apos;re one step closer!</h3>
+      <marquee>
+        <hr/>
+      </marquee>
+      <form>
+        <div className='input-area'>
+          <input type="text" name="username" value="" placeholder="username" />
+          &nbsp; &nbsp;
+          <input type="text" name="password" value="" placeholder="password"/>
+          <br />
+          <br />
+          <input type="text" name="firstName" value="" placeholder="first name"/>
+          &nbsp; &nbsp;
+          <input type="text" name="lastName" value="" placeholder="last name"/>
+          <br />
+          <br />
+          <input type="text" name="password" value="" placeholder="email"/>
+          &nbsp; &nbsp;
+          <input type="text" name="password" value="" placeholder="phone"/>
+          <br />
+          <br />
+          <button>Submit</button>   &nbsp; &nbsp; &nbsp; &nbsp;
+          <Link href="/signInPage">
+            <button className='button-two'>Or, just sign-in</button>
+          </Link>
+          &nbsp; &nbsp;
+        </div>
+      </form>
+
+
       <style jsx>{`
         h3 {
           font-family: arial;
@@ -59,35 +90,7 @@ function signUpPage() {
           margin: 0px 5px auto 38px;
         }
       `}</style>
-      <Header />
-      <h3>You&apos;re one step closer!</h3>
-      <marquee>
-        <hr/>
-      </marquee>
-      <form>
-        <div className='input-area'>
-          <input type="text" name="username" value="" placeholder="username" />
-          &nbsp; &nbsp;
-          <input type="text" name="password" value="" placeholder="password"/>
-          <br />
-          <br />
-          <input type="text" name="firstName" value="" placeholder="first name"/>
-          &nbsp; &nbsp;
-          <input type="text" name="lastName" value="" placeholder="last name"/>
-          <br />
-          <br />
-          <input type="text" name="password" value="" placeholder="email"/>
-          &nbsp; &nbsp;
-          <input type="text" name="password" value="" placeholder="phone"/>
-          <br />
-          <br />
-          <button>Submit</button>   &nbsp; &nbsp; &nbsp; &nbsp;
-          <Link href="/signInPage">
-            <button className='button-two'>Or, just sign-in</button>
-          </Link>
-          &nbsp; &nbsp;
-        </div>
-      </form>
+      
     </div>
   );
 }

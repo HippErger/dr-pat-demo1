@@ -4,11 +4,8 @@ import Link from 'next/link';
 function Header() {
   return (
   <div className='navBar'>
-
     <Link className='navbar-logo' href="/index">
-
       <img src='/static/img/SF22.png' />
-
     </Link>
     <div className='navbar-Links'>
       <Link className='navbar-home' href="/index">
@@ -207,7 +204,6 @@ function Header() {
       }
 
     }
-
 
   `}</style>
 

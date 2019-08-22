@@ -19,7 +19,7 @@ class Details extends Component {
 
   render() {
     const { user } = this.props;
-    // const userId = this.props.url.query.id;
+    const userId = this.props.url.query.id;
     return (
       <div>
           <Header />

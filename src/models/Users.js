@@ -9,7 +9,6 @@ const userSchema = mongoose.Schema({
   email: {
     type: String,
     unique: true,
-    required: true,
     maxlength: [ 20, 'That is a long email' ]
   },
   phone: {

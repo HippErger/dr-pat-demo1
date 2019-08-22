@@ -90,75 +90,7 @@ class patientContact extends Component {
   render() {
     return (
       <div>
-        <style jsx>{`
-          h4 {
-            font-family: arial;
-            font-weight: lighter;
-            text-align: center;
-            color: #f4511e;
-          }
-          form {
-            padding: 1%;
-            margin-left: 25%;
-            background-color: #ccc;
-            width: 50%;
-            border-radius: 4px;
-          }
-          .form-div {
-            margin-left: 6.5%;
-          }
-          input[type=text], select {
-            width: 45%;
-            padding: 1% 5%;
-            margin: 0% auto 2% auto;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            text-align: center;
-            font-size: 9px;
-          }
-          #zip-input {
-            margin-left: 24%;
-          }
-          #small-explain-input {
-            width: 30%;
-            padding 1% 2%;
-            margin-left: 2%;
-          }
-          .DOB-input {
-            width: 45%;
-            padding: 1% 5%;
-            margin: 0% auto 2% auto;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            text-align: center;
-            font-size: 9px;
-          }
-          button, .button-one {
-            display: inline-block;
-            border-radius: 4px;
-            background-color: #f4511e;
-            border: none;
-            color: #FFFFFF;
-            text-align: center;
-            font-size: 10px;
-            padding: 1%;
-            width: 21%;
-            transition: all 0.5s;f
-            cursor: pointer;
-            margin: 0% 1% auto 18%;
-          }
-          button:hover, .button-one:hover {
-            background-color: #33FFFF;
-            color: #f4511e;
-          }
-          .button-two {
-            margin-left: 0%;
-          }
-        `}</style>
+
         <Header />
         <h4>
           Create a profile
@@ -872,6 +804,78 @@ class patientContact extends Component {
             </button>
           </Link>
         </form>
+
+
+        <style jsx>{`
+          h4 {
+            font-family: arial;
+            font-weight: lighter;
+            text-align: center;
+            color: #f4511e;
+          }
+          form {
+            padding: 1%;
+            margin-left: 25%;
+            background-color: #ccc;
+            width: 50%;
+            border-radius: 4px;
+          }
+          .form-div {
+            margin-left: 6.5%;
+          }
+          input[type=text], select {
+            width: 45%;
+            padding: 1% 5%;
+            margin: 0% auto 2% auto;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 9px;
+          }
+          #zip-input {
+            margin-left: 24%;
+          }
+          #small-explain-input {
+            width: 30%;
+            padding 1% 2%;
+            margin-left: 2%;
+          }
+          .DOB-input {
+            width: 45%;
+            padding: 1% 5%;
+            margin: 0% auto 2% auto;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 9px;
+          }
+          button, .button-one {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 10px;
+            padding: 1%;
+            width: 21%;
+            transition: all 0.5s;f
+            cursor: pointer;
+            margin: 0% 1% auto 18%;
+          }
+          button:hover, .button-one:hover {
+            background-color: #33FFFF;
+            color: #f4511e;
+          }
+          .button-two {
+            margin-left: 0%;
+          }
+        `}</style>
+        
       </div>
     );
   }
