@@ -50,7 +50,7 @@ const userController = {
       .then(user => {
         user.firstName = request.body.firstName || user.firstName;
         user.lastName = request.body.lastName || user.lastName;
-        user.avatar = request.body.avatar || user.avatar;
+        user.userName = request.body.userName || user.userName;
         user.interests = request.body.interests || user.interests;
         user.userName = request.body.userName || user.userName;
 

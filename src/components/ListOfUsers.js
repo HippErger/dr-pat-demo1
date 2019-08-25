@@ -18,7 +18,7 @@ class ListOfUsers extends Component {
             <div key={key} >
               <ul>
                 <li> {user.firstName} </li>
-                <li> {user.email} </li>
+                <li> {user.userName} </li>
                 <li> {user.phone} </li>
                 <li> {user.message} </li>
               </ul>

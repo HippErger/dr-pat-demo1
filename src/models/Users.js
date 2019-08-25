@@ -6,10 +6,10 @@ const userSchema = mongoose.Schema({
     required: true,
     maxlength: [ 30, 'something went wrong' ]
   },
-  email: {
+  userName: {
     type: String,
     unique: true,
-    maxlength: [ 20, 'That is a long email' ]
+    maxlength: [ 50, 'That is a long email' ]
   },
   phone: {
     type: String,
