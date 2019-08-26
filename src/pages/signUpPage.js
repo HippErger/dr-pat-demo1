@@ -18,14 +18,14 @@ function signUpPage() {
           <input type="text" name="password" value="" placeholder="password"/>
           <br />
           <br />
-          <input type="text" name="firstName" value="" placeholder="first name"/>
+          <input type="text" name="albumName" value="" placeholder="first name"/>
           &nbsp; &nbsp;
           <input type="text" name="lastName" value="" placeholder="last name"/>
           <br />
           <br />
           <input type="text" name="password" value="" placeholder="email"/>
           &nbsp; &nbsp;
-          <input type="text" name="password" value="" placeholder="phone"/>
+          <input type="text" name="password" value="" placeholder="releaseDate"/>
           <br />
           <br />
           <button>Submit</button>   &nbsp; &nbsp; &nbsp; &nbsp;

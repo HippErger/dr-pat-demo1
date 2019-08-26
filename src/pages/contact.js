@@ -10,9 +10,10 @@ import {
 import PropTypes from 'prop-types';
 
 const FORM_VALUES = {
-  firstName: '',
+  albumName: '',
   email: '',
-  phone: '',
+  releaseDate: '',
+  inventory: '',
   message: '',
 
 };
@@ -57,33 +58,42 @@ class AddUserPage extends Component {
           </h4>
           <form onSubmit={this.handleSubmit.bind(this)}>
 
-            First Name:<br />
+            band Name:<br />
               <input
                 type='text'
-                name='firstName'
-                placeholder='Name'
-                value={this.state.firstName}
+                name='albumName'
+                placeholder='Band Name'
+                value={this.state.bandName}
                 onChange={this.handleInputChange.bind(this)}
               />
               <br />
-            Email: <br />
+            album: <br />
               <input
                 type="text"
                 name="email"
-                placeholder="Email"
+                placeholder="Album name"
                 value={this.state.email}
                 onChange={this.handleInputChange.bind(this)}
               />
               <br />
-            Phone: <br />
+            releaseDate: <br />
               <input
                 type='text'
-                name='phone'
-                placeholder='Phone'
-                value={this.state.phone}
+                name='releaseDate'
+                placeholder='releaseDate'
+                value={this.state.releaseDate}
                 onChange={this.handleInputChange.bind(this)}
               />
               <br />
+              inventory: <br />
+                <input
+                  type='text'
+                  name='inventory'
+                  placeholder='inventory'
+                  value={this.state.inventory}
+                  onChange={this.handleInputChange.bind(this)}
+                />
+                <br />
               Message:<br />
                 <input
                   type='text'

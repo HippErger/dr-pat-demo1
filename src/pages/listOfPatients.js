@@ -22,9 +22,9 @@ class ListOfPatients extends Component {
           return (
             <div key={key} className='user-div'>
               <ul>
-                <li className='first-name'> {user.firstName} </li>
-                <li> {user.lastName} </li>
-                <li className='user-name'> username: {user.userName} </li>
+                <li className='first-name'> {user.bandName} </li>
+                <li> {user.albumName} </li>
+                <li className='user-name'> inventory: {user.inventory} </li>
               </ul>
               <Link href={`/details?id=${user._id}`} as={`/details/user}`} prefetch>
                 <button>
@@ -98,7 +98,7 @@ class ListOfPatients extends Component {
             background-color: #33FFFF;
           }
         `}</style>
-        
+
       </div>
     );
   }

@@ -17,9 +17,9 @@ class ListOfUsers extends Component {
           return (
             <div key={key} >
               <ul>
-                <li> {user.firstName} </li>
+                <li> {user.albumName} </li>
                 <li> {user.userName} </li>
-                <li> {user.phone} </li>
+                <li> {user.releaseDate} </li>
                 <li> {user.message} </li>
               </ul>
               <a href={`/details?id=${user._id}`} >View User</a>

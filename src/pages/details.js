@@ -27,9 +27,9 @@ class Details extends Component {
           Details
         </h1>
         <ul>
-          <li> {user.firstName} </li>
-          <li> {user.userName} </li>
-          <li> {user.phone} </li>
+          <li> {user.albumName} </li>
+          <li> {user.releaseDate} </li>
+          <li> {user.inventory} </li>
           <li> {user.message} </li>
         </ul>
       </div>

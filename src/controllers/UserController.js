@@ -48,7 +48,7 @@ const userController = {
   update: (request, response, next) => {
     User.findById(request.params.id).exec()
       .then(user => {
-        user.firstName = request.body.firstName || user.firstName;
+        user.albumName = request.body.albumName || user.albumName;
         user.lastName = request.body.lastName || user.lastName;
         user.userName = request.body.userName || user.userName;
         user.interests = request.body.interests || user.interests;
