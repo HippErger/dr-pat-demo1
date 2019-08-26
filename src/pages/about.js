@@ -1,17 +1,23 @@
 import React from 'react';
-import Link from 'next/link';
+import Header from '../components/Header';
+import ListOfUsers from '../components/ListOfUsers';
+import withRedux from 'next-redux-wrapper';
+import {initStore} from '../services/store';
+
+
+
 
 function AboutPage() {
+
   return (
     <div>
+      <Header />
       <h1>
         About page
       </h1>
-      <Link href="/">
-        <a>Back to home</a>
-      </Link>
+      <ListOfUsers />
     </div>
   );
 }
 
-export default AboutPage;
+export default withRedux(initStore, null, null)(AboutPage);

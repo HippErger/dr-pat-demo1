@@ -1,10 +1,17 @@
 import mongoose from 'mongoose';
 
 const userSchema = mongoose.Schema({
+<<<<<<< HEAD
   bandName: {
     type: String,
     required: true,
     maxlength: [ 50, 'something went wrong' ]
+=======
+  firstName: {
+    type: String,
+    required: true,
+    maxlength: [ 30, 'something went wrong' ]
+>>>>>>> 25dfc3570ab8d4a6b5b5c25bed5b065eaf86639e
   },
   userName: {
     type: String,

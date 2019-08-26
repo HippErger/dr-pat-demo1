@@ -7,6 +7,7 @@ function loadUserError(message) {
   };
 }
 
+
 export function loadUsers() {
   return function (dispatch) {
     fetch('/users')
@@ -107,34 +108,5 @@ function getUserDone(user) {
   return {
     type: 'GET_USER_DONE',
     value: user,
-  };
-}
-
-export function updateUser(id) {
-  return function (dispatch) {
-    fetch(`/users/${id}` , {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json'},
-    })
-      .then(() => {
-        dispatch(updateUserDone(id));
-      })
-      .catch(err => {
-        dispatch(updateUserError(), err);
-      });
-  };
-}
-
-function updateUserDone(user) {
-  return {
-    type: 'USER_UPDATE_DONE',
-    value: user,
-  };
-}
-
-function updateUserError(message) {
-  return {
-    type: 'USER_UPDATE_ERROR',
-    message
   };
 }

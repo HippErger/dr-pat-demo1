@@ -9,7 +9,7 @@ require('../services/passport');
 
 const authRouter = express.Router();
 
-authRouter.post('../pages/patientSignUpForm', (request, response, next) => {
+authRouter.post('/pages/patientSignUpForm', (request, response, next) => {
   const {userName, passWord} = request.body;
 
   if (!userName || !passWord) {
@@ -23,6 +23,7 @@ authRouter.post('../pages/patientSignUpForm', (request, response, next) => {
       if (existingUser) {
         return response.status(422).json({ error: 'Username is in use' });
       }
+
 
 
       bcrypt.hash(passWord, 10, (err, hashedPassword) => {
@@ -47,7 +48,7 @@ function tokenForUser(user) {
   return jwt.encode({ userID: user.id, iat: timeStamp}, process.env.SECRET);
 }
 
-authRouter.post('/api/signup', signinStrategy, (request, response) => {
+authRouter.post('/pages/patientSignUpForm', signinStrategy, (request, response) => {
   response.json({ token: tokenForUser(request.user)});
 });
 

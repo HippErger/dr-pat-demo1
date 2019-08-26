@@ -19,7 +19,7 @@ class Details extends Component {
 
   render() {
     const { user } = this.props;
-    // const userId = this.props.url.query.id;
+    const userId = this.props.url.query.id;
     return (
       <div>
           <Header />
@@ -28,10 +28,9 @@ class Details extends Component {
         </h1>
         <ul>
           <li> {user.firstName} </li>
-          <li> {user.lastName} </li>
           <li> {user.userName} </li>
-          <li> {user.address} </li>
-          <li> {user.username} </li>
+          <li> {user.phone} </li>
+          <li> {user.message} </li>
         </ul>
       </div>
     );
